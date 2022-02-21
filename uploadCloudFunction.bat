@@ -1,0 +1,1 @@
+"D:\微信开发者工具\微信web开发者工具\cli.bat" cloud functions deploy --e xiaoliu-k8902 --n quickstartFunctions --r --project "D:\Code\校园跑腿" --report_first --report

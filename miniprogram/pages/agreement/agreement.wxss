@@ -1,0 +1,25 @@
+.body {
+  padding: 60rpx 30rpx;
+}
+
+view {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-size: 38rpx;
+  margin-bottom: 30rpx;
+}
+
+.btn {
+  width: 85% !important;
+  background-color: #1067D1;
+  padding: 20rpx 0;
+  font-weight: 400;
+  border-radius: 40rpx;
+  margin: 0 auto;
+  color: #fff;
+  margin: 60rpx 0 40rpx;
+}

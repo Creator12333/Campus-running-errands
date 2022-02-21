@@ -1,0 +1,46 @@
+
+<view class="body">
+    <view class="body_item">
+        <view class="left">
+            <image src="../../images/build.png"></image>
+            <text>选择楼栋</text>
+        </view>
+        <view class="right" bindtap="selectBuild">{{ build ? build : '点击选择' }} ></view>
+    </view>
+    <view class="body_item">
+        <view class="left">
+            <image src="../../images/address.png"></image>
+            <text>详细地址</text>
+        </view>
+        <view class="right">
+            <input type="text" placeholder="输入门牌号" bindinput="getHouseNumber" value="{{ houseNumber }}" />
+        </view>
+    </view>
+    <view class="body_item">
+        <view class="left">
+            <image src="../../images/name.png"></image>
+            <text>收件姓名</text>
+        </view>
+        <view class="right">
+            <input type="text" placeholder="输入取件姓名" bindinput="getName" value="{{ name }}" />
+        </view>
+    </view>
+    <view class="body_item">
+        <view class="left">
+            <image src="../../images/phone.png"></image>
+            <text>收件电话</text>
+        </view>
+        <view class="right">
+            <input type="text" placeholder="输入取件电话" bindinput="getPhone" value="{{ phone }}" />
+        </view>
+    </view>
+
+    <view class="defalut">
+        <text>是否设为默认地址</text>
+        <switch checked="{{ defalutAddress }}" bindchange="handleChangeSwitch"></switch>
+    </view>
+
+    <button class="saveBtn" bindtap="saveAddress">保存地址</button>
+
+    <text class="showTip">地址说明</text>
+</view>

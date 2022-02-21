@@ -1,0 +1,14 @@
+
+<view class="modal">
+    <view class="top">
+        <text>{{ title }}</text>
+        <text bindtap="cancel">x</text>
+    </view>
+    <view class="content">
+        {{ content }}
+    </view>
+    <view class="btn">
+        <button type="primary" bindtap="submit">确定</button>
+        <button bindtap="cancel">取消</button>
+    </view>
+</view>

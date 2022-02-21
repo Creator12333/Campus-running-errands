@@ -1,0 +1,37 @@
+.modal {
+  background-color: #fff;
+  box-shadow: 0 0 5rpx 5rpx #d1d1d1;
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  min-height: 400rpx;
+  width: 500rpx;
+  padding: 20rpx 30rpx 30rpx;
+}
+
+.modal .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal .content {
+  margin: 40rpx 30rpx 100rpx 30rpx;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.modal .btn {
+  display: flex;
+  width: 90%;
+  position: absolute;
+  bottom: 40rpx;
+}
+
+.modal .btn button {
+  width: 40%;
+  font-weight: 400;
+}

@@ -1,0 +1,27 @@
+.logo {
+  padding: 30rpx;
+  background-color: #fff;
+}
+
+.logo image {
+  width: 100%;
+  height: 300px;
+}
+
+.desc {
+  background-color: #fff;
+  padding: 30rpx;
+  margin-top: 5rpx;
+  font-size: 28rpx;
+}
+
+.text {
+  color: #a1a1a1;
+  margin: 30rpx;
+}
+
+.cell {
+  background-color: #fff;
+  padding: 30rpx;
+  margin-bottom: 5rpx;
+}

@@ -1,0 +1,91 @@
+
+page {
+  background-color: #fff;
+}
+
+.body {
+  width: 85%;
+  margin: 50rpx auto;
+  box-shadow: 0 0 20rpx #a1a1a1;
+  border-radius: 25rpx;
+  padding: 25rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.help_content {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+
+.help_content textarea {
+  border: 1rpx solid #d1d1d1;
+  margin-top: 20rpx;
+  padding: 20rpx;
+  width: 90%;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  width: 95%;
+  border-bottom: 2rpx solid #a1a1a1;
+  margin: 0 auto;
+}
+
+.item .getAddress {
+  display: flex;
+}
+
+.item .getAddress input {
+  text-align: right;
+}
+
+.item .getAddress image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 10rpx;
+}
+
+.item text:nth-child(2) {
+  color: #a1a1a1;
+}
+
+.item input {
+  text-align: right;
+}
+
+.tips {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tips text {
+  margin-top: 25rpx;
+}
+
+.tips text:nth-child(2) {
+  color: #f00;
+}
+
+
+.submitBtn {
+  width: 85% !important;
+  color: #fff;
+  background-color: #1067D1;
+  padding: 20rpx 0;
+  border-radius: 40rpx;
+  margin-top: 60rpx;
+  font-weight: 400;
+  margin-bottom: 10rpx;
+}
+
+.notice {
+  color: #1067D1;
+  text-align: center;
+  margin-bottom: 50rpx;
+}

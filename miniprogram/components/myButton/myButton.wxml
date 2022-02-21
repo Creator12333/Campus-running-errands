@@ -1,0 +1,2 @@
+
+<button class="submitBtn">{{ text }}</button>

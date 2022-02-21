@@ -1,0 +1,74 @@
+
+page {
+  background-color: #fff;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body .body_item {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  padding: 30rpx 0;
+  border-bottom: 2rpx solid #d1d1d1;
+}
+
+.body .body_item .left {
+  display: flex;
+  align-items: center;
+}
+
+.body .body_item .left image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.body .body_item .left text {
+  margin-left: 20rpx;
+}
+
+.body .body_item .right {
+  color: #a1a1a1;
+}
+
+.body .body_item .right input {
+  text-align: right;
+}
+
+.body .defalut {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20rpx 0;
+}
+
+.body .defalut text {
+  color: #a1a1a1;
+  margin-right: 30rpx;
+}
+
+/* 修改switch默认样式 */
+/* .wx-switch-input {
+  background: #1067D1 !important;
+} */
+
+.body .saveBtn {
+  width: 85%;
+  background-color: #1067D1;
+  color: #fff;
+  padding: 20rpx 0;
+  border-radius: 40rpx;
+  margin-top: 70rpx;
+  font-weight: 400;
+}
+
+.body .showTip {
+  margin-top: 30rpx;
+}

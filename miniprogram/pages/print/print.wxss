@@ -1,0 +1,87 @@
+
+page {
+  background-color: #fff;
+}
+
+.body {
+  width: 90%;
+  margin: 50rpx auto;
+  box-shadow: 0 0 20rpx #a1a1a1;
+  border-radius: 20rpx;
+  padding: 20rpx 0;
+
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  padding: 20rpx 0;
+  margin: 0 auto;
+  border-bottom: 2rpx solid #d1d1d1;
+  align-items: center;
+}
+
+.item .addImage {
+  font-size: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  border: 1rpx dashed #000;
+}
+
+.item .addImage image {
+  width: 100%;
+  height: 100%;
+}
+
+.item text:nth-child(2) {
+  color: #a1a1a1;
+}
+
+.item input {
+  text-align: right;
+}
+
+.color_red {
+  color: #f00;
+}
+
+.tips {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tips .tips_money {
+  display: flex;
+  flex-direction: column;
+  color: #717171;
+  font-size: 26rpx;
+  margin: 25rpx 0;
+}
+
+.tips .money {
+  margin-top: 25rpx;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+
+.body .submitBtn {
+  width: 85%;
+  color: #fff;
+  background-color: #1067D1;
+  padding: 20rpx 0;
+  border-radius: 40rpx;
+  margin-top: 60rpx;
+  font-weight: 400;
+  margin-bottom: 10rpx;
+}
+
+.notice {
+  color: #1067D1;
+  text-align: center;
+  margin-bottom: 50rpx;
+}

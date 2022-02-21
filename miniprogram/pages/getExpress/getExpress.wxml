@@ -1,0 +1,84 @@
+<view class="container">
+  <view class="title">快递大小</view>
+  <view class="type">
+    <view class="{{ typeNow === index ? 'selectType' : ''}}" wx:for="{{ typeList }}" wx:key="index" data-id="{{ index }}" data-tip="{{ item.tips }}" bindtap="selectType">{{ item.name }}</view>
+  </view>
+
+  <view class="address">
+    <text>收件地址：</text>
+    <text bindtap="selectAddress">{{ address ? address : '请选择地址 >' }}</text>
+  </view>
+  <view class="address">
+    <text>快递商家：</text>
+    <text bindtap="selectBusiness">{{ business ? business : '请选择快递点 >' }}</text>
+  </view>
+  <view class="address">
+    <text>取件信息 </text>
+  </view>
+
+  <view class="getCode">
+    <textarea class="content" cols="30" rows="10" placeholder="输入取件码或上传截图" value="{{ expressCode }}" bindinput="getExpressCode"></textarea>
+    <image class="expressCode" src="{{ codeImg }}"></image>
+
+    <image class="getImg" src="{{ codeImg ? '../../images/image_fill.png' : '../../images/image.png' }}" bindtap="getCode"></image>
+  </view>
+
+  <view class="address">
+    <text>备注信息：</text>
+    <input type="text" placeholder="此信息所有人可见" value="{{ remark }}" bindinput="getRemark" />
+  </view>
+  <view class="address">
+    <text>更多选择：</text>
+    <text style="color: #1067D1" bindtap="showMore" wx:if="{{ !showMore }}">显示</text>
+    <text style="color: #1067D1" bindtap="showMore" wx:else>隐藏</text>
+  </view>
+  <view class="show" wx:if="{{ showMore }}">
+    <view class="address showWidth">
+      <text>期望送达：</text>
+      <!-- <text>不限制 ></text> -->
+      <picker bindchange="bindArriveChange" value="{{ arriveIndex }}" range="{{ arriveArray }}">
+        <text style="color: #a1a1a1;">
+          {{ arriveArray[arriveIndex] }} >
+        </text>
+      </picker>
+    </view>
+    <view class="address showWidth">
+      <text>性别限制：</text>
+      <!-- <text>不限制性别 ></text> -->
+      <picker bindchange="bindGenderChange" value="{{ genderIndex }}" range="{{ genderArray }}">
+        <text style="color: #a1a1a1;">
+          {{ genderArray[genderIndex] }} >
+        </text>
+      </picker>
+    </view>
+    <view class="address showWidth">
+      <text>快递数量：</text>
+      <!-- <text>1个 ></text> -->
+      <picker bindchange="bindExpressNumChange" value="{{ numIndex }}" range="{{ numArray }}">
+        <text style="color: #a1a1a1;">
+          {{ numArray[numIndex] }}个 >
+        </text>
+      </picker>
+    </view>
+    <view class="address showWidth">
+      <text>加急打赏：</text>
+      <switch bindchange="handleChangeReward"></switch>
+    </view>
+    <view class="address showWidth" wx:if="{{ isReward }}">
+      <text>额外赏金：</text>
+      <input type="text" placeholder="输入赏金" value="{{ addMoney }}" bindinput="getAddMoeny" />
+    </view>
+  </view>
+
+  <view class="bottom_tips">
+    <text>信息仅接单的同学可见, 安全放心!</text>
+    <text>需支付</text>
+    <text>{{ money + addMoeny }} 元</text>
+  </view>
+
+  <button class="submit" bindtap="submit">立即发布</button>
+  <view class="statement">
+    <text>免责声明</text>
+    <text>用户条款&隐私策略</text>
+  </view>
+</view>

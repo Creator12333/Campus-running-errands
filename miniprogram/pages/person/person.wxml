@@ -1,0 +1,59 @@
+<view class="info" bindtap="updateInfo">
+    <image class="avatar" src="{{ hasUserInfo ? userInfo.avatarUrl : '../../images/touxiang.png' }}"></image>
+    <block wx:if="{{ !hasUserInfo }}">
+        <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"  wx:if="{{ canIUseGetUserProfile }}" bindtap="getUserProfile">点我授权</button>
+        <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo">点我授权</button>
+    </block>
+    <view class="name" wx:if="{{ hasUserInfo }}">
+        <text>{{ userInfo.nickName }}</text>
+        <text>{{ userInfo.gender === 0 ? '男' : '女' }}</text>
+    </view>
+    <image wx:if="{{ hasUserInfo }}" class="into" src="../../images/dayu.png"></image>
+</view>
+
+<button class="cell mt" bindtap="applyOrder">
+    <view class="cellLeft">
+        <image src="../../images/apply.png"></image>
+        <text>申请接单</text>
+    </view>
+    <text class="cellRight">></text>
+</button>
+
+<view class="customerService mt">
+    <view class="tips">
+        问题请点击微信客服复制到微信添加好友说明
+    </view>
+    <button class="cell" bindtap="getWXCustomer">
+        <view class="cellLeft">
+            <image src="../../images/wx.png"></image>
+            <text>微信客服</text>
+        </view>
+        <text class="cellRight">></text>
+    </button>
+    <button class="cell" open-type="contact">
+        <view class="cellLeft">
+            <image src="../../images/customService.png"></image>
+            <text>官方客服</text>
+        </view>
+        <text class="cellRight">></text>
+    </button>
+</view>
+
+<view class="ohter mt">
+    <button class="cell" bindtap="toAbout">
+        <view class="cellLeft">
+            <image src="../../images/about.png"></image>
+            <text>关于我们</text>
+        </view>
+        <text class="cellRight">></text>
+    </button>
+    <button class="cell" open-type="contact">
+        <view class="cellLeft">
+            <image src="../../images/advice.png"></image>
+            <text>投诉建议</text>
+        </view>
+        <text class="cellRight">></text>
+    </button>
+</view>
+
+<view class="version mt">当前版本: 1.0.0</view>

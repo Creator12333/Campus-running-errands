@@ -1,0 +1,32 @@
+
+<view class="body">
+    <view class="help_content">
+        <text>租借物品: </text>
+        <textarea placeholder="请输入要租借的物品及要求等" value="{{ leaseItem }}" cols="30" rows="10" bindinput="getLeaseItem"></textarea>
+    </view>
+    <view class="item">
+        <text>收货地点: </text>
+        <text bindtap="selectAddress">{{ address ? address : '请选择地址 >' }}</text>
+    </view>
+    <view class="item">
+        <text>租借时长: </text>
+        <input type="text" value="{{ leaseTime }}" placeholder="请输入租借时长" bindinput="getLeaseTime" />
+    </view>
+    <view class="item">
+        <text>预计交货时间: </text>
+        <input type="text" value="{{ deliveryTime }}" placeholder="请输入预计交货时间" bindinput="getDeliveryTime" />
+    </view>
+    <view class="item">
+        <text>金额: </text>
+        <input type="text" value="{{ money }}" placeholder="输入金额" bindinput="getMoney" />
+    </view>
+
+    <view class="tips">
+        <text>需支付</text>
+        <text>{{ money }}元</text>
+    </view>
+
+    <button class="submitBtn" bindtap="submit">立即发布</button>
+</view>
+
+<view class="notice">用户条款&隐私策略</view>

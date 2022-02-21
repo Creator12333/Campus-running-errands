@@ -1,0 +1,44 @@
+
+<scroll-view scroll-x class="scroll_view">
+    <view class="tab">
+        <view class="tab_item {{ tabNow === index ? 'select' : '' }}" wx:for="{{ tabList }}" data-id="{{ index }}" wx:key="index" bindtap="selectTab">
+            {{ item }}
+        </view>
+    </view>
+</scroll-view>
+
+<view wx:if="{{ tabNow === 0 }}" class="body">
+    <view class="tips">
+        向上拖动更新信息~~~
+    </view>
+    <view class="order" wx:for="{{ orderList }}" wx:key="index">
+        <view class="order_top">
+            <view class="top_left">
+                <image src="{{ item.userInfo.avatarUrl }}"></image>
+                <view class="name">
+                    <text>{{ item.name }}</text>
+                    <text>{{ item.time }}</text>
+                </view>
+            </view>
+            <view class="top_right">
+                {{ item.state }}
+            </view>
+        </view>
+        <view class="order_content">
+            <view class="content">
+                {{ item.info }}
+            </view>
+            <view class="address">
+                目的地: {{ item.address }}
+            </view>
+        </view>
+        <view class="order_bottom">
+            <view class="money">
+                金额 ￥{{ item.money }}
+            </view>
+            <view class="accept" wx:if="{{ item.state === '待帮助' }}">
+                接单
+            </view>
+        </view>
+    </view>
+</view>

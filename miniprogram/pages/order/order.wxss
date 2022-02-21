@@ -1,0 +1,118 @@
+.scroll_view {
+  background-color: #fff;
+  white-space: nowrap;
+}
+
+.tab {
+  display: flex;
+  text-align: center;
+}
+
+.tab .tab_item {
+  height: 90rpx;
+  display: inline-block;
+  line-height: 90rpx;
+  margin: 0 10rpx;
+  padding: 0 20rpx;
+  flex: 1;
+}
+
+.select {
+  color: #1067D1;
+  border-bottom: 4rpx solid #1067D1;
+}
+
+.body .tips {
+  width: 100%;
+  background-color: #5a9ae7;
+  text-align: center;
+  color: #fff;
+  padding: 10rpx 0;
+}
+
+.order {
+  background-color: #fff;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 25rpx;
+  padding: 25rpx;
+  margin-top: 30rpx;
+}
+
+.order .order_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order .order_top .top_left {
+  display: flex;
+}
+
+.order .order_top .top_left image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+
+.order .order_top .top_left .name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+
+.order .order_top .top_left .name text:nth-child(2) {
+  color: #aaa;
+  font-size: 26rpx;
+}
+
+.order .order_top .top_right {
+  color: rgb(0, 255, 0);
+  background-color: rgba(0, 255, 0, .2);
+  padding: 10rpx 25rpx;
+  border: 15rpx;
+  font-size: 28rpx;
+}
+
+.order .order_content {
+  padding-left: 70rpx;
+  padding-top: 20rpx;
+}
+
+.order .order_content .address {
+  color: #1067D1;
+  font-size: 30rpx;
+}
+
+.order .order_bottom {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15rpx;
+}
+
+.order .order_bottom .money {
+  color: rgb(255, 102, 102);
+  background-color: rgba(255, 102, 102, .2);
+  padding: 10rpx 25rpx;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+}
+
+.order .order_bottom .accept {
+  color: #fff;
+  background-color: #1067D1;
+  padding: 15rpx 50rpx;
+  margin-left: 25rpx;
+  border-top-left-radius: 25rpx;
+  border-bottom-right-radius: 25rpx;
+  font-size: 28rpx;
+}
+
+
+.order .order_top .top_right_finish {
+  color: rgb(255, 153, 0);
+  background-color: rgb(255, 247, 235);
+  padding: 10rpx 25rpx;
+  border: 15rpx;
+  font-size: 28rpx;
+}

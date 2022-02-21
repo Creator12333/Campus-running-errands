@@ -1,0 +1,83 @@
+.info {
+  width: 80%;
+  background-color: #1067D1;
+  display: flex;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  padding: 50rpx 40rpx;
+  align-items: center;
+}
+
+.info .avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.info .name {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-left: 40rpx;
+}
+
+.info .name text:nth-child(2) {
+  margin-top: 25rpx;
+}
+
+
+.info .into {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: auto;
+}
+
+.cell {
+  display: flex;
+  width: 90% !important;
+  background-color: #fff;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 40rpx;
+  margin-top: 6rpx;
+  font-weight: 400;
+}
+
+.cell .cellLeft {
+  display: flex;
+  align-items: center;
+}
+
+.cell .cellLeft image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.cell .cellLeft text {
+  margin-left: 30rpx;
+}
+
+.cell .cellRight {
+  color: #c1c1c1;
+}
+
+.customerService .tips {
+  background-color: #1067D1;
+  width: 80%;
+  padding: 20rpx 40rpx;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 28rpx;
+}
+
+.mt {
+  margin-top: 25rpx;
+}
+
+.version {
+  color: #a1a1a1;
+  width: 100%;
+  text-align: center;
+}

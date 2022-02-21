@@ -1,0 +1,7 @@
+
+<view class="body">
+    <image src="../../images/receiveLoading.png"></image>
+    <text>审核中, 请耐心等待</text>
+    <text>如有疑问请点击下方联系管理员</text>
+    <button class="btn" bindtap="getAdminWX">复制管理员微信</button>
+</view>

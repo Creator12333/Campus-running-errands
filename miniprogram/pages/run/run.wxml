@@ -1,0 +1,31 @@
+<view class="body">
+    <view class="help_content">
+        <text>帮助内容: </text>
+        <textarea placeholder="请输入帮助信息" value="{{ helpContent }}" cols="30" rows="10" bindinput="getHelpContent"></textarea>
+    </view>
+    <view class="item">
+        <text>取货地点: </text>
+        <view class="getAddress">
+            <input type="text" value="{{ pickUpAddress }}" placeholder="输入取货地点" bindinput="getPickUpAddress" />
+            <image src="../../images/address.png"></image>
+        </view>
+    </view>
+    <view class="item">
+        <text>收件地址: </text>
+        <text>{{ address ? address : '请选择地址 >' }}</text>
+    </view>
+    <view class="item">
+        <text>金额: </text>
+        <input type="text" value="{{ addMoney }}" placeholder="输入金额" bindinput="getMoney" />
+    </view>
+
+    <view class="tips">
+        <text>距离过长, 无人接单建议增加金额</text>
+        <text>跑腿费</text>
+        <text>{{ 10 + addMoney }}元</text>
+    </view>
+
+    <button class="submitBtn" bindtap="submit">立即发布</button>
+</view>
+
+<view class="notice">用户条款&隐私策略</view>

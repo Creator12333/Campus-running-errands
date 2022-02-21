@@ -1,0 +1,36 @@
+
+<view class="body">
+    <view class="avatar">
+        <image src="{{ userInfo.avatarUrl }}"></image>
+    </view>
+    <view class="tips" bindtap="showTips">
+        申请接单常见问题说明
+    </view>
+    <view class="item">
+        <text>姓名：</text>
+        <input type="text" placeholder="你的姓名" value="{{ name }}" bindinput="getName" />
+    </view>
+    <view class="item">
+        <text>证件号：</text>
+        <input type="text" placeholder="你的证件号" value="{{ userID }}" bindinput="getUserID" />
+    </view>
+    <view class="uploadImg">
+        <text>相关证件证明：</text>
+        <view class="upload" bindtap="uploadImg">
+            <text wx:if="{{ !userIDImg }}"> + </text>
+            <image wx:else src="{{ userIDImg }}"></image>
+        </view>
+    </view>
+    <view class="tips mt" bindtap="getAdminWX">
+        点击复制管理员微信进行加急审核
+    </view>
+    <view class="item" bindtap="toAgreement">
+        <view class="left">
+            <image src="../../images/order.png"></image>
+            <text>电子协议</text>
+        </view>
+        <view class="right"> > </view>
+    </view>
+    <my-button text="提交申请" bindtap="submit"></my-button>
+    <my-modal wx:if="{{ showTips }}" title="常见问题" content="{{ modalContent }}" bindcancel="showTips" bindsubmit="showTips"></my-modal>
+</view>

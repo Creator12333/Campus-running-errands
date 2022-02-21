@@ -1,0 +1,21 @@
+<view class="logo">
+    <image src="../../images/banner1.jpg" mode="widthFix"></image>
+</view>
+
+<view class="desc">
+    专注于为全国搞笑提供的最便捷的校园生活服务平台。我们的理念——互利共存。你可以成为一个发布者, 发布的你需求, 也可以做一个接收者, 接收任务并完成他人的需求。当发布者和接收者完成各自所需。
+</view>
+
+<view class="text">联系我们</view>
+
+<view class="cell">
+    对本程序中的疏漏之处和错误, 望不吝赐教
+</view>
+
+<view class="cell">
+    微信公众号: Code程序人生
+</view>
+
+<view class="cell">
+    对本程序中的疏漏之处和错误, 望不吝赐教
+</view>

@@ -1,0 +1,32 @@
+
+<view class="body">
+    <view class="item">
+        <text>游戏名称: </text>
+        <input type="text" placeholder="请输入您选择的游戏名称" value="{{ gameName }}" bindinput="getGameName" />
+    </view>
+    <view class="item">
+        <text>游戏时间or盘数: </text>
+        <input type="text" placeholder="如: 13:00-16:00或3盘" value="{{ gameTime }}" bindinput="getGameTime"  />
+    </view>
+    <view class="help_content">
+        <text>备注信息: </text>
+        <textarea placeholder="请输入详细信息, 如端游的游戏大区, 陪玩的要求等, 没有可填无" cols="30" rows="10" value="{{ remark }}" bindinput="getRemark"></textarea>
+    </view>
+    <view class="item">
+        <text>游戏ID: </text>
+        <input type="text" placeholder="输入游戏ID或游戏账号" value="{{ gameID }}" bindinput="getGameID" />
+    </view>
+    <view class="item">
+        <text>金额: </text>
+        <input type="text" placeholder="输入金额" value="{{ money }}" bindinput="getMoney" />
+    </view>
+
+    <view class="tips">
+        <text>需支付</text>
+        <text>{{ money }}元</text>
+    </view>
+
+    <button class="submitBtn" bindtap="submit">立即发布</button>
+</view>
+
+<view class="notice">用户条款&隐私策略</view>

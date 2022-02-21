@@ -1,0 +1,44 @@
+.scroll_view {
+  background-color: #fff;
+  white-space: nowrap;
+}
+
+.tab {
+  display: flex;
+  text-align: center;
+}
+
+.tab .tab_item {
+  height: 90rpx;
+  display: inline-block;
+  line-height: 90rpx;
+  margin: 0 10rpx;
+  padding: 0 20rpx;
+  width: 100rpx;
+}
+
+.select {
+  color: #1067D1;
+  border-bottom: 4rpx solid #1067D1;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.body .item {
+  width: 90%;
+  padding: 30rpx 0;
+  border-bottom: 2rpx solid #d1d1d1;
+}
+
+.showAll {
+  color: #a1a1a1;
+  margin: 20rpx 0;
+  text-align: center;
+}
