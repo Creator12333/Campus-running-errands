@@ -1,0 +1,11 @@
+<view class="body" wx:for="{{ receiveList }}" wx:key="index">
+  <view class="top">
+    <view class="name">{{ item.name }}</view>
+    <view class="userID">{{ item.userID }}</view>
+  </view>
+  <image src="{{ item.userIDImg }}" mode="aspectFit"></image>
+  <view class="btn">
+    <button type="warn" size="mini" data-item="{{ item }}" data-name="不通过" bindtap="toExamine">不通过</button>
+    <button type="primary" size="mini" data-item="{{ item }}" data-name="通过" bindtap="toExamine">通过</button>
+  </view>
+</view>

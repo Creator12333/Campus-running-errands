@@ -57,7 +57,15 @@
         {
           "name": "pages/updateRecordSuccess/index",
           "pathName": "pages/updateRecordSuccess/index",
+          "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/orderReceiver/orderReceiver",
+          "query": "",
+          "scene": null,
+          "launchMode": "default"
         }
       ]
     }

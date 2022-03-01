@@ -29,7 +29,6 @@ Page({
   },
 
   submit() {
-    const that = this.data;
     const { printImg, address, userInfo, pageNum, colorPrint, remark, twoSided } = this.data;
     if (!printImg || !address || !pageNum) {
       wx.showToast({
@@ -90,8 +89,8 @@ Page({
   },
 
   selectAddress() {
-    wx.navigateTo({
-      url: '../address/address',
+    wx.redirectTo({
+      url: '../address/address?url=print',
     })
   },
 

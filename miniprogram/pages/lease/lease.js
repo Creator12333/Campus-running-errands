@@ -79,8 +79,8 @@ Page({
   },
 
   selectAddress() {
-    wx.navigateTo({
-      url: '../address/address',
+    wx.redirectTo({
+      url: '../address/address?url=lease',
     })
   },
 

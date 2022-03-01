@@ -21,6 +21,7 @@
     "pages/aboutAs/aboutAs",
     "pages/applyOrder/applyOrder",
     "pages/agreement/agreement",
+    "pages/orderReceiver/orderReceiver",
     "pages/receiveLoading/receiveLoading",
     "components/myButton/myButton",
     "components/myModal/myModal"

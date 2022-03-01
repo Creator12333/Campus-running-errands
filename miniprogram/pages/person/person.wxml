@@ -19,6 +19,14 @@
     <text class="cellRight">></text>
 </button>
 
+<button class="cell mt" bindtap="orderReceiver" wx:if="{{ admin }}">
+    <view class="cellLeft">
+        <image src="../../images/check.png"></image>
+        <text>审核接单申请</text>
+    </view>
+    <text class="cellRight">></text>
+</button>
+
 <view class="customerService mt">
     <view class="tips">
         问题请点击微信客服复制到微信添加好友说明

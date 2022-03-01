@@ -15,6 +15,13 @@ Page({
     money: null,
   },
 
+
+  selectAddress() {
+    wx.redirectTo({
+      url: '../address/address?url=helpMeGive',
+    })
+  },
+
   submit() {
     const {
       address,

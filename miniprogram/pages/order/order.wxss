@@ -66,6 +66,7 @@
   font-size: 26rpx;
 }
 
+/* 待帮助状态 */
 .order .order_top .top_right {
   color: rgb(0, 255, 0);
   background-color: rgba(0, 255, 0, .2);
@@ -108,11 +109,46 @@
   font-size: 28rpx;
 }
 
-
+/* 已完成状态 */
 .order .order_top .top_right_finish {
   color: rgb(255, 153, 0);
   background-color: rgb(255, 247, 235);
   padding: 10rpx 25rpx;
-  border: 15rpx;
+  border-radius: 10rpx;
   font-size: 28rpx;
+}
+
+/* 已帮助状态 */
+.order .order_top .top_right_help {
+  color: rgb(16, 103, 209);
+  background-color: rgba(16, 103, 209, .2);
+  padding: 10rpx 25rpx;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+}
+
+.helpOrderInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  padding: 40rpx 0;
+}
+
+.helpOrderInfo .orderNum, .orderMoney {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.helpOrderInfo .orderNum text:first-child, .orderMoney text:first-child {
+  font-weight: bold;
+  font-size: 26rpx;
+}
+
+.helpOrderInfo .orderNum text:last-child, .orderMoney text:last-child {
+  color: #a1a1a1;
 }

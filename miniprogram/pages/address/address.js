@@ -5,17 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-    address: []
+    address: [],
+    url: ''
   },
 
   selectAddress(e) {
     const {
       index
     } = e.currentTarget.dataset;
+    const { url } = this.data;
     const address = this.data.address[index];
     wx.setStorageSync('addressNow', address);
     wx.redirectTo({
-      url: `../getExpress/getExpress`,
+      url: `../${url}/${url}`,
     })
   },
 
@@ -49,8 +51,10 @@ Page({
    */
   onLoad: function (options) {
     const address = wx.getStorageSync('address');
+    const { url } = options;
     this.setData({
       address,
+      url,
     })
   },
 

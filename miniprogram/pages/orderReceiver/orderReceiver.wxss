@@ -1,0 +1,41 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  width: 90%;
+  border-radius: 40rpx;
+  padding: 25rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.body .top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.body .top .name, .userID {
+  max-width: 50%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.body image {
+  width: 80%;
+  height: 250rpx;
+  margin-top: 40rpx;
+}
+
+.body .btn {
+  margin-left: auto;
+  margin-top: 50rpx;
+}
+
+.body .btn button:last-child {
+  margin-left: 30rpx;
+}

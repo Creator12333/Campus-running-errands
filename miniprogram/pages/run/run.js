@@ -1,5 +1,7 @@
 // pages/run/run.js
-import { getTimeNow } from '../../utils/index';
+import {
+  getTimeNow
+} from '../../utils/index';
 const db = wx.cloud.database();
 Page({
 
@@ -15,8 +17,14 @@ Page({
   },
 
   submit() {
-    const { helpContent, pickUpAddress, address, addMoney, userInfo } = this.data;
-    if (!helpContent || !pickUpAddress) {
+    const {
+      helpContent,
+      pickUpAddress,
+      address,
+      addMoney,
+      userInfo
+    } = this.data;
+    if (!helpContent || !pickUpAddress || !address) {
       wx.showToast({
         icon: 'none',
         title: '您填写的信息不全',
@@ -65,6 +73,12 @@ Page({
   getPickUpAddress(e) {
     this.setData({
       pickUpAddress: e.detail.value
+    })
+  },
+
+  selectAddress() {
+    wx.redirectTo({
+      url: '../address/address?url=run',
     })
   },
 
